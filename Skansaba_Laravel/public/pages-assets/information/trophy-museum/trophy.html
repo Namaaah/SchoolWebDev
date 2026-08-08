@@ -1,0 +1,96 @@
+<div class="trophy-page">
+
+    <!-- HERO SECTION -->
+    <section class="trophy-hero">
+        <div class="trophy-hero-bg"></div>
+        <div class="trophy-container trophy-hero-content">
+            <span class="trophy-hero-badge"><i class="fa-solid fa-award"></i> Museum Trophy SMK Negeri 1
+                Bantul</span>
+            <h1 class="trophy-hero-title">Koleksi Trophy Kejuaraan</h1>
+            <p class="trophy-hero-subtitle">
+                Setiap trophy adalah bukti kerja keras, dedikasi, dan semangat juang siswa-siswi SMK Negeri 1 Bantul
+                dalam berbagai kejuaraan, mulai dari tingkat kabupaten hingga internasional.
+            </p>
+            <div class="trophy-stats-grid" id="trophy-stats-grid"></div>
+        </div>
+    </section>
+
+    <!-- TOOLBAR & GRID -->
+    <section class="trophy-section">
+        <div class="trophy-container">
+
+            <div class="trophy-toolbar">
+
+                <div class="trophy-search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="trophy-search-input"
+                        placeholder="Cari nama lomba, juara, atau peserta..." autocomplete="off">
+                    <button type="button" id="trophy-search-clear" class="trophy-clear-btn" style="display:none;">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="trophy-sort-row">
+                    <span class="trophy-sort-label"><i class="fa-solid fa-arrow-up-wide-short"></i> Urutkan:</span>
+                    <div class="trophy-sort-options" id="trophy-sort-options">
+                        <button type="button" class="trophy-sort-btn active" data-sort="newest">
+                            <i class="fa-solid fa-clock"></i> Terbaru
+                        </button>
+                        <button type="button" class="trophy-sort-btn" data-sort="oldest">
+                            <i class="fa-solid fa-clock-rotate-left"></i> Terlama
+                        </button>
+                        <button type="button" class="trophy-sort-btn" data-sort="level-high">
+                            <i class="fa-solid fa-arrow-trend-up"></i> Tingkat Tertinggi
+                        </button>
+                        <button type="button" class="trophy-sort-btn" data-sort="level-low">
+                            <i class="fa-solid fa-arrow-trend-down"></i> Tingkat Terendah
+                        </button>
+                    </div>
+                </div>
+
+                <div class="trophy-chips-container" id="trophy-chips">
+                    <button type="button" class="trophy-chip active" data-level="all">
+                        <i class="fa-solid fa-border-all"></i> Semua
+                    </button>
+                    <button type="button" class="trophy-chip" data-level="Internasional">
+                        <i class="fa-solid fa-earth-asia"></i> Internasional
+                    </button>
+                    <button type="button" class="trophy-chip" data-level="Nasional">
+                        <i class="fa-solid fa-flag"></i> Nasional
+                    </button>
+                    <button type="button" class="trophy-chip" data-level="Provinsi">
+                        <i class="fa-solid fa-map-location-dot"></i> Provinsi
+                    </button>
+                    <button type="button" class="trophy-chip" data-level="Kabupaten">
+                        <i class="fa-solid fa-city"></i> Kabupaten/Kota
+                    </button>
+                </div>
+
+                <div class="trophy-result-meta">
+                    <span id="trophy-count-badge" class="trophy-count-badge">
+                        <i class="fa-solid fa-trophy"></i> Menampilkan 8 Trophy
+                    </span>
+                </div>
+            </div>
+
+            <div class="trophy-grid" id="trophy-grid"></div>
+
+            <div class="trophy-empty-box" id="trophy-empty" style="display:none;">
+                <i class="fa-solid fa-trophy empty-icon"></i>
+                <h3>Tidak Ada Trophy Ditemukan</h3>
+                <p>Coba ubah kata kunci pencarian atau pilih tingkat kejuaraan lainnya.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- MODAL DETAIL -->
+<div class="trophy-modal" id="trophy-modal">
+    <div class="trophy-modal-overlay" id="trophy-modal-overlay"></div>
+    <div class="trophy-modal-dialog" role="dialog" aria-modal="true" aria-label="Detail Trophy">
+        <button type="button" class="trophy-modal-close" id="trophy-modal-close" aria-label="Tutup">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="trophy-modal-body" id="trophy-modal-body"></div>
+    </div>
+</div>

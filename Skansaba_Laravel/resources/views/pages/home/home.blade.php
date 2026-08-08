@@ -1,0 +1,328 @@
+@extends('layouts.app')
+
+@section('title', 'Dashboard - SMK Negeri 1 Bantul')
+
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('pages-assets/home/dashboard.css') }}">
+@endsection
+
+@section('content')
+    <section class="hero-video-section">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-school-building-and-campus-41533-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-touch-blocker"></div>
+        <div class="hero-title-wrapper">
+            <h1 class="hero-school-title">SMK NEGERI 1 BANTUL</h1>
+            <div class="hero-title-underline"></div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll ke bawah</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <main class="dashboard-main">
+
+        <section class="dashboard-section" id="principal-section">
+            <div class="principal-card reveal-left">
+                <div class="principal-left">
+
+                    <div class="principal-img-frame">
+                        <img src="https://smkn1bantul.sch.id/assets/images/kepsek.jpeg"
+                            alt="Kepala Sekolah SMKN 1 Bantul" class="principal-img" id="principal-photo">
+                    </div>
+                </div>
+                <div class="principal-right">
+                    <div class="principal-header">
+                        <span class="badge-role">KEPALA SEKOLAH</span>
+                        <h2 class="principal-name">Raharjo, S.IP, M.Pd</h2>
+                    </div>
+                    <div class="principal-speech-body" id="principal-speech-body">
+                        <p>Assalamualaikum warahmatullahi wabarakatuh, Salam sejahtera bagi kita semua. Saya, Raharjo,
+                            M.Pd., Kepala SMK Negeri 1 Bantul, dengan bangga menyampaikan visi dan misi sekolah kami,
+                            yaitu mencetak lulusan yang unggul, berkompeten, dan siap bersaing di dunia global. Visi ini
+                            kami wujudkan melalui pendidikan yang berbasis pada penguatan karakter, keterampilan, dan
+                            penguasaan teknologi. Kami percaya bahwa dengan pendidikan yang berkualitas, kami dapat
+                            menyiapkan generasi yang siap menghadapi tantangan masa depan, baik di dunia kerja,
+                            wirausaha, maupun pendidikan tinggi.</p>
+                        <p>Di SMK Negeri 1 Bantul, kami menerapkan pembelajaran yang memanusiakan hubungan, memahami
+                            konsep, membangun keberlanjutan, memilih tantangan, dan memberdayakan konteks. Dengan
+                            pendekatan ini, kami berupaya menciptakan siswa yang tidak hanya cerdas secara akademik,
+                            tetapi juga memiliki karakter yang sesuai dengan Profil Pelajar Pancasila. Kami ingin siswa
+                            mampu berkolaborasi, berinovasi, dan berkontribusi positif dalam masyarakat. Harapan besar
+                            kami adalah lulusan SMK Negeri 1 Bantul menjadi generasi yang siap kerja di dunia industri,
+                            siap berwirausaha dengan ide-ide kreatifnya, serta siap melanjutkan pendidikan ke jenjang
+                            yang lebih tinggi. Kami percaya, dengan dukungan semua pihak, cita-cita ini dapat terwujud,
+                            dan lulusan kami akan menjadi kebanggaan bangsa. Teruslah belajar, berinovasi, dan
+                            berkontribusi untuk masa depan yang lebih baik.                             Wassalamualaikum warahmatullahi wabarakatuh.
+                        </p>
+                    </div>
+                    <button class="speech-toggle-btn" id="speech-toggle-btn" aria-expanded="false"
+                        aria-controls="principal-speech-body">
+                        <span class="speech-toggle-label">Show</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="news-section">
+            <h2 class="section-title reveal-scale">Berita Terbaru</h2>
+
+            <div class="news-card reveal-right">
+
+                <div class="news-featured-col">
+                    <div class="news-img-frame">
+                        <img src="https://smkn1bantul.sch.id/storage/01KW61CF4HSJTY074ZD1HQ8VZH.jpg"
+                            alt="Pengumuman daftar ulang SPMB 2026/2027" class="news-img">
+                    </div>
+
+                    <h3 class="news-featured-heading">Pengumuman daftar ulang SPMB 2026/2027</h3>
+
+                    <div class="news-featured-footer">
+                        <div class="news-date-bar">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span class="news-date-text">28 Juli 2026</span>
+                        </div>
+                        <button class="btn-show-more" id="news-show-more-btn">
+                            Show More <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="news-other-col">
+
+                    <a href="#" class="other-news-header" id="other-news-page-link" title="Lihat Semua Berita Lainnya">
+                        <span>Berita lainnya</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+
+                    <div class="other-news-list">
+                        <div class="other-news-item">
+                            <h4 class="other-news-item-title">Penerimaan Peserta Didik Baru (PPDB) Jalur Prestasi &
+                                Afirmasi</h4>
+                            <span class="other-news-time"><i class="fa-regular fa-clock"></i> 2 weeks ago</span>
+                        </div>
+
+                        <div class="other-news-item">
+                            <h4 class="other-news-item-title">Kunjungan Industri Siswa SMKN 1 Bantul ke PT Time
+                                Excelindo</h4>
+                            <span class="other-news-time"><i class="fa-regular fa-clock"></i> 3 weeks ago</span>
+                        </div>
+
+                        <div class="other-news-item">
+                            <h4 class="other-news-item-title">Workshop Penyelarasan Kurikulum Berbasis Otomasi & Cloud
+                            </h4>
+                            <span class="other-news-time"><i class="fa-regular fa-clock"></i> 1 month ago</span>
+                        </div>
+
+                        <div class="other-news-item">
+                            <h4 class="other-news-item-title">Pelepasan Purna Siswa & Bursa Kerja Khusus (BKK) SMKN 1
+                                Bantul</h4>
+                            <span class="other-news-time"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="achievements-section">
+            <h2 class="section-title reveal-scale">Prestasi Terbaru Siswa</h2>
+
+            <div class="achievements-container" id="achievements-list">
+
+                <div class="achievement-card">
+                    <div class="achievement-img-wrapper">
+                        <img src="https://smkn1bantul.sch.id/storage/01JA6ZZTT0H12Q4NZRXBZ9E8EC.PNG"
+                            alt="Prestasi Siswa 1" class="achievement-img">
+
+                        <div class="achievement-date-badge">
+                            <i class="fa-regular fa-calendar-days"></i> 20 Juli 2026
+                        </div>
+                    </div>
+                    <div class="achievement-details">
+                        <h4 class="achievement-title">Juara 1 Lomba Kompetensi Siswa (LKS) Tingkat Nasional</h4>
+                        <p class="achievement-desc">Siswa SMKN 1 Bantul berhasil meraih Medali Emas dalam bidang Web
+                            Technologies tingkat Nasional.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-img-wrapper">
+                        <img src="https://smkn1bantul.sch.id/storage/01JA702A89MSW043CNGVR85V2S.PNG"
+                            alt="Prestasi Siswa 2" class="achievement-img">
+
+                        <div class="achievement-date-badge">
+                            <i class="fa-regular fa-calendar-days"></i> 15 Juni 2026
+                        </div>
+                    </div>
+                    <div class="achievement-details">
+                        <h4 class="achievement-title">Juara 2 National Robotics & IoT Innovation Contest</h4>
+                        <p class="achievement-desc">Tim Robotika SMKN 1 Bantul menampilkan karya inovasi prototipe
+                            otomasi industri ramah lingkungan.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="achievements-action">
+                <button class="btn-show-more" id="achievements-show-more-btn">
+                    Show More <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="partners-section">
+            <h2 class="section-title reveal-scale">Kerjasama</h2>
+
+            <div class="partners-grid">
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/ambarukmo.png" alt="Ambarrukmo"
+                        class="partner-logo">
+                    <span class="partner-name">Ambarrukmo</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/ameya.png" alt="Ameya" class="partner-logo">
+                    <span class="partner-name">Ameya</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/amikom.png" alt="AMIKOM" class="partner-logo">
+                    <span class="partner-name">AMIKOM</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/ampta.jpg" alt="AMPTA" class="partner-logo">
+                    <span class="partner-name">AMPTA</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/duta.png" alt="Duta" class="partner-logo">
+                    <span class="partner-name">Duta</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/gmedia.jpg" alt="Gmedia" class="partner-logo">
+                    <span class="partner-name">Gmedia</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/janabadra.png" alt="Janabadra"
+                        class="partner-logo">
+                    <span class="partner-name">Janabadra</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/mirota.png" alt="Mirota" class="partner-logo">
+                    <span class="partner-name">Mirota</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/msd.png" alt="MSD" class="partner-logo">
+                    <span class="partner-name">MSD</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/profidana.png" alt="Profidana"
+                        class="partner-logo">
+                    <span class="partner-name">Profidana</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/pt_time_excelindo_logo.jpeg"
+                        alt="PT Time Excelindo" class="partner-logo">
+                    <span class="partner-name">Time Excelindo</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/sejong.jpg" alt="Sejong" class="partner-logo">
+                    <span class="partner-name">Sejong</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/seven.png" alt="Seven" class="partner-logo">
+                    <span class="partner-name">Seven</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/stikom.jpeg" alt="STIKOM" class="partner-logo">
+                    <span class="partner-name">STIKOM</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/akademikom.png" alt="Akademikom"
+                        class="partner-logo">
+                    <span class="partner-name">Akademikom</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/semar.jpg" alt="Semar" class="partner-logo">
+                    <span class="partner-name">Semar</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/uad.png" alt="UAD" class="partner-logo">
+                    <span class="partner-name">UAD</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/mercubuana.png" alt="Mercu Buana"
+                        class="partner-logo">
+                    <span class="partner-name">Mercu Buana</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/unjani.png" alt="Unjani" class="partner-logo">
+                    <span class="partner-name">Unjani</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/ust.png" alt="UST" class="partner-logo">
+                    <span class="partner-name">UST</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/ut.png" alt="UT" class="partner-logo">
+                    <span class="partner-name">UT</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/utdi.png" alt="UTDI" class="partner-logo">
+                    <span class="partner-name">UTDI</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/uty.png" alt="UTY" class="partner-logo">
+                    <span class="partner-name">UTY</span>
+                </div>
+                <div class="partner-logo-item">
+                    <img src="https://smkn1bantul.sch.id/assets/images/maspion.jpeg" alt="Maspion" class="partner-logo">
+                    <span class="partner-name">Maspion</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="media-section">
+            <h2 class="section-title reveal-scale">Media</h2>
+
+            <div class="social-media-grid">
+
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+                    class="social-card social-youtube" title="YouTube SMKN 1 Bantul">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                    class="social-card social-instagram" title="Instagram SMKN 1 Bantul">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                    class="social-card social-twitter" title="Twitter / X SMKN 1 Bantul">
+                    <svg class="social-x-svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                    <span>Twitter</span>
+                </a>
+
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"
+                    class="social-card social-tiktok" title="TikTok SMKN 1 Bantul">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>&copy; 2026 SMK Negeri 1 Bantul. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('pages-assets/home/dashboard.js') }}"></script>
+@endsection
