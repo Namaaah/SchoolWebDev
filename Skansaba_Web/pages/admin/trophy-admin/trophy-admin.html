@@ -1,0 +1,25 @@
+<section class="trophy-admin-page">
+  <div class="trophy-admin-header">
+    <div><span class="admin-eyebrow"><i class="fa-solid fa-shield-halved"></i> Area Admin</span><h1>Kelola Museum Trophy</h1><p>Tambahkan display kejuaraan baru atau ubah informasi koleksi yang sudah tampil.</p></div>
+    <a class="admin-view-link" href="#" data-page="trophy"><i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Museum</a>
+  </div>
+  <div class="admin-notice"><i class="fa-solid fa-circle-info"></i> Perubahan disimpan di browser ini. Untuk tampil bagi semua pengunjung, sambungkan penyimpanan ini ke backend/database.</div>
+  <div class="admin-layout">
+    <aside class="admin-collection"><div class="admin-list-head"><h2>Display Kejuaraan</h2><button id="admin-new-trophy" type="button"><i class="fa-solid fa-plus"></i> Tambah</button></div><div id="admin-trophy-list" class="admin-trophy-list"></div></aside>
+    <section class="admin-editor"><div class="admin-editor-head"><div><span id="admin-form-mode">Tambah display</span><h2 id="admin-form-title">Kejuaraan baru</h2></div><button type="button" id="admin-delete-trophy" class="admin-delete-btn" hidden><i class="fa-solid fa-trash"></i> Hapus</button></div>
+      <form id="admin-trophy-form">
+        <input type="hidden" id="trophy-id"><div class="admin-form-grid">
+          <label class="admin-field admin-field-wide">Nama kejuaraan<input id="trophy-title" required maxlength="120" placeholder="Contoh: LKS Web Technologies"></label>
+          <label class="admin-field">Tingkat<select id="trophy-level" required><option>Internasional</option><option>Nasional</option><option>Provinsi</option><option>Kabupaten</option></select></label>
+          <label class="admin-field">Peringkat / penghargaan<input id="trophy-ranking" required maxlength="80" placeholder="Contoh: Juara 1"></label>
+          <label class="admin-field">Tanggal kejuaraan<input id="trophy-date" required type="date"></label>
+          <label class="admin-field">Hadiah / trophy<input id="trophy-prize" required maxlength="160" placeholder="Piala, sertifikat, dll."></label>
+          <label class="admin-field admin-field-wide">URL gambar display<input id="trophy-image" type="url" placeholder="https://... (opsional)"></label>
+          <label class="admin-field admin-field-wide">Deskripsi<textarea id="trophy-description" required maxlength="500" rows="4" placeholder="Ceritakan capaian kejuaraan ini."></textarea></label>
+          <label class="admin-field admin-field-wide">Peserta (satu peserta per baris: Nama | Peran)<textarea id="trophy-participants" rows="4" placeholder="Nama Siswa | Ketua Tim&#10;Nama Siswa | Anggota"></textarea></label>
+        </div>
+        <div class="admin-form-actions"><button type="button" class="admin-cancel-btn" id="admin-cancel-edit">Batal</button><button type="submit" class="admin-save-btn"><i class="fa-solid fa-floppy-disk"></i> Simpan Display</button></div>
+      </form>
+    </section>
+  </div>
+</section>

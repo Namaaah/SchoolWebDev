@@ -1,0 +1,16 @@
+﻿*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --primary: #1e40af; --accent: #2563eb; --light: #3b82f6;
+  --dark: #0f172a; --medium: #334155; --muted: #64748b;
+  --white: #ffffff; --sky: #eff6ff; --border: #dbeafe;
+  --radius-md: 16px; --radius-sm: 8px;
+  --transition: 0.3s ease;
+}
+html { scroll-behavior: smooth; font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; color: var(--dark); line-height: 1.6; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+.page-main { flex: 1; padding: 0; max-width: 1280px; margin: 0 auto; width: 100%; }
+.page-hero { text-align: center; padding: 100px 24px 80px; }
+.page-hero-icon { font-size: 4.5rem; color: var(--primary); margin-bottom: 20px; opacity: 0.9; }
+.page-hero-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; color: var(--dark); margin-bottom: 12px; letter-spacing: 1px; }
+.page-hero-subtitle { font-size: 1.15rem; color: var(--muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+@media (max-width: 768px) { .page-hero { padding: 70px 16px 50px; } .page-hero-icon { font-size: 3.5rem; } }

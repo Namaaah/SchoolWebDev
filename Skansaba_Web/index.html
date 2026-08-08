@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Negeri 1 Bantul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/navigation/navigasi.css">
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="https://smkn1bantul.sch.id/logo.png" alt="Logo SMKN 1 Bantul" class="nav-logo">
+                <span class="nav-school-name">SMKN 1 BANTUL</span>
+            </div>
+
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="nav-link" data-page="beranda">Beranda</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link" data-page="join-us"><i class="fa-solid fa-user-plus"></i> Join Us</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link" data-page="ruangan">Ruangan</a>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Profil Sekolah <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-page="sejarah">Sejarah</a>
+                        <a href="#" class="dropdown-link" data-page="visi-misi">Visi & Misi</a>
+                        <a href="#" class="dropdown-link" data-page="struktur-organisasi">Struktur Organisasi</a>
+                        <a href="#" class="dropdown-link" data-page="sarana-prasarana">Sarana Prasarana</a>
+                        <a href="#" class="dropdown-link" data-page="teaching-factory">Teaching Factory</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Informasi <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-page="berita">Berita</a>
+                        <a href="#" class="dropdown-link" data-page="prestasi">Prestasi</a>
+                        <a href="#" class="dropdown-link" data-page="trophy">Museum Trophy</a>
+                        <a href="#" class="dropdown-link" data-page="trophy-admin">Admin Museum Trophy</a>
+                        <a href="#" class="dropdown-link" data-page="download">Download</a>
+                        <a href="#" class="dropdown-link" data-page="berkas-spmb">Berkas SPMB</a>
+                        <a href="#" class="dropdown-link" data-page="web-spmb">Web SPMB</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Program Keahlian <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-page="akl">Akuntansi dan Keuangan Lembaga</a>
+                        <a href="#" class="dropdown-link" data-page="lps">Layanan Perbankan Syariah</a>
+                        <a href="#" class="dropdown-link" data-page="mp">Manajemen Perkantoran</a>
+                        <a href="#" class="dropdown-link" data-page="bisnis-ritel">Bisnis Ritel</a>
+                        <a href="#" class="dropdown-link" data-page="bisnis-digital">Bisnis Digital</a>
+                        <a href="#" class="dropdown-link" data-page="rpl">Rekayasa Perangkat Lunak</a>
+                        <a href="#" class="dropdown-link" data-page="dkv">Desain Komunikasi Visual</a>
+                        <a href="#" class="dropdown-link" data-page="tkj">Teknik Komputer Jaringan</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Lainnya <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-page="ekstrakurikuler">Ekstrakurikuler</a>
+                        <a href="#" class="dropdown-link" data-page="organisasi-siswa">Organisasi Siswa</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <main class="content-container" id="content-container">
+        <div class="page-loading" id="page-loading">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            <span>Memuat...</span>
+        </div>
+    </main>
+
+    <div class="bottom-info-bar" id="bottom-info-bar">
+        <div class="info-inner">
+            <div class="info-left">
+                <p><i class="fa-solid fa-location-dot"></i> Jl. Khaharjo, Beji, Bantul, DI Yogyakarta 55711</p>
+                <p><i class="fa-solid fa-phone"></i> (0274) 367123</p>
+            </div>
+            <a href="https://www.google.com/maps?q=SMKN+1+Bantul" target="_blank" rel="noopener noreferrer"
+                class="info-right">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Lokasi Sekolah</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="assets/trophy/trophy-store.js"></script>
+    <script src="assets/navigation/navigasi.js"></script>
+    <script src="assets/chatbot/knowledge-base.js"></script>
+    <script src="assets/chatbot/chatbot.js"></script>
+</body>
+
+</html>
